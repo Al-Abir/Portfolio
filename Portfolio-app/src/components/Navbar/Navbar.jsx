@@ -8,7 +8,7 @@ const Navbar = () => {
             <li><a className="border-b-2 border-transparent hover:border-white transition">Reviews</a></li>
     </>
     return (
-        <div className="navbar fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0">
+        <div className="navbar bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
