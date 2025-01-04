@@ -2,13 +2,13 @@ import React from 'react';
 
 const Navbar = () => {
     const links = <>
-        <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Work</a></li>
-        <li><a>Reviews</a></li>
+            <li><a className="border-b-2 border-transparent hover:border-white transition">Home</a></li>
+            <li><a className="border-b-2 border-transparent hover:border-white transition">About</a></li>
+            <li><a className="border-b-2 border-transparent hover:border-white transition">Work</a></li>
+            <li><a className="border-b-2 border-transparent hover:border-white transition">Reviews</a></li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,7 +27,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
                         {links}
                     </ul>
                 </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Contact Me</a>
+                <a className="btn text-white">Contact Me</a>
             </div>
         </div>
     );
