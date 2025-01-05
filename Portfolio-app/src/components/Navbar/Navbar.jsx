@@ -47,7 +47,7 @@ const Navbar = () => {
                     <span className="material-symbols-rounded">{navOpen ? 'close':'menu'}</span>
 
                     </button>
-                    <div className= {'navbar'+ (navOpen ? 'active': " ")}>
+                    <div className={`navbar ${navOpen ? 'active' : ''}`}>
                     {navItems.map(({label,link,className,ref},key)=>(
                         <a
                         href={link}
