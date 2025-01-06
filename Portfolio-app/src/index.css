@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 /*====== Base ======= */
 
 html{
@@ -27,7 +25,7 @@ body{
  /* navbar */
 
  .navbar{
-    @apply absolute top-full mt-2 right-0 min-w-0 p-2 bg-zinc-50/10 rounded-2xl 
+    @apply absolute top-full mt-2 right-0 min-w-60 p-2 bg-zinc-50/10 rounded-2xl 
     ring-inset ring-1 ring-zinc-50/10 backdrop-blur-2xl hover:bg-zinc-50/15 scale-90
     isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter]
  }
@@ -36,3 +34,7 @@ body{
  .navbar.active{
     @apply opacity-100 scale-100 blur-0 visible
  }
+ .nav-link {
+      @apply grid items-center h-9
+  }
+  
