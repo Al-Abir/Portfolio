@@ -2,39 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-/*====== Base ======= */
 
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 
 body{
-    @apply bg-zinc-900 text-zinc-50 
+  @apply bg-zinc-900 text-zinc-50 
 }
 
 
- /* ======Components======== */
+/* ======Components======== */
 
-.menu-btn{
-  @apply w-10 h-10 grid place-items-center bg-zinc-50/10
-  ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl rounded-xl hover:bg-zinc-50/15
-  transition-[transform,shadow] active:scale-95
+/* .menu-btn{
+@apply w-10 h-10 grid place-items-center bg-zinc-50/10
+ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl rounded-xl hover:bg-zinc-50/15
+transition-[transform,shadow] active:scale-95
+} */
+
+/* navbar */
+/* 
+.navbar{
+  @apply absolute top-full mt-2 right-0 min-w-60 p-2 bg-zinc-50/10 rounded-2xl 
+  ring-inset ring-1 ring-zinc-50/10 backdrop-blur-2xl hover:bg-zinc-50/15 scale-90
+  isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter]
+} */
+
+
+/*========== Hero section ========*/
+.headLine-1 {
+  @apply max-w-max; /* Use only valid Tailwind utilities here */
 }
 
- /* navbar */
+.headLine-1 {
+  background: -webkit-linear-gradient(0deg, #fafafa, #a1a1a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
- .navbar{
-    @apply absolute top-full mt-2 right-0 min-w-60 p-2 bg-zinc-50/10 rounded-2xl 
-    ring-inset ring-1 ring-zinc-50/10 backdrop-blur-2xl hover:bg-zinc-50/15 scale-90
-    isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter]
- }
+.headLine-1{
 
-
- .navbar.active{
-    @apply opacity-100 scale-100 blur-0 visible
- }
- .nav-link {
-      @apply grid items-center h-9
-  }
-  
+  @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.15]
+}
