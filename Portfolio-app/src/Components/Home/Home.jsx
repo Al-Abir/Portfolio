@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { ButtonOutline, ButtonPrimary } from '../Button/Button';
+
 const Home = () => {
     return (
         <div className="hero bg-base-200 min-h-screen">
@@ -43,7 +45,18 @@ const Home = () => {
                     </h1>
 
                     {/* Button */}
-                    <button className="btn btn-primary">Get Started</button>
+
+                    <div className='flex items-center gap-3'>
+                       <ButtonPrimary label="Download CV"
+                                    icon="download"
+                                    href='https://drive.google.com/file/d/1kBYl3xtH8FWW3EXQqvpJjsqYgxZ-Q6R4/view?usp=drive_link'></ButtonPrimary>
+
+                               <ButtonOutline
+                               href="#about"
+                               label='Scroll down'
+                               icon='arrow_downward'></ButtonOutline>
+                    </div>
+
                 </div>
             </div>
         </div>
