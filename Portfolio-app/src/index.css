@@ -62,3 +62,10 @@ transition-[transform,shadow] active:scale-95
 .btn-outline{
   @apply text-white h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800
 }
+
+
+/* ===============About=============== */
+
+.section{
+  @apply pt-20
+}
