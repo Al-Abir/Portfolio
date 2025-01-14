@@ -2,16 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html{
   scroll-behavior: smooth;
 }
-
 
 body{
   @apply bg-zinc-900 text-zinc-50 
 }
 
+.container{
+  @apply px-4 mx-auto lg:px-8 xl:max-w-6xl
+}
+
+.section{
+  @apply pt-20
+}
 
 /* ======Components======== */
 
@@ -30,12 +35,13 @@ transition-[transform,shadow] active:scale-95
 } */
 
 
-/*========== Hero section ========*/
+/*========== Head-Line website ========*/
 .headLine-1 {
   @apply max-w-max; /* Use only valid Tailwind utilities here */
 }
 
-.headLine-1 {
+.headLine-1,
+.headLine-2{
   background: -webkit-linear-gradient(0deg, #fafafa, #a1a1a1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -44,6 +50,9 @@ transition-[transform,shadow] active:scale-95
 .headLine-1{
 
   @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.15]
+}
+.headLine-2{
+  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
 }
 
 /* ===============button=============== */
@@ -65,7 +74,3 @@ transition-[transform,shadow] active:scale-95
 
 
 /* ===============About=============== */
-
-.section{
-  @apply pt-20
-}

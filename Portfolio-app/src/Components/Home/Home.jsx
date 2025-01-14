@@ -4,7 +4,7 @@ import { ButtonOutline, ButtonPrimary } from '../Button/Button';
 
 const Home = () => {
     return (
-        <div className="hero bg-base-200 min-h-screen">
+        <div className="hero bg-base-200 min-h-screen ">
             <div className="hero-content flex flex-col-reverse lg:flex-row-reverse">
                 {/* Image Section */}
                 <div className="lg:order-1">
