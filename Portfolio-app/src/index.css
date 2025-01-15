@@ -55,6 +55,10 @@ transition-[transform,shadow] active:scale-95
   @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
 }
 
+.title-1{
+  @apply text-[22px] font-normal
+}
+
 /* ===============button=============== */
 .btn .material-symbols-rounded{
   @apply text-[20px]
