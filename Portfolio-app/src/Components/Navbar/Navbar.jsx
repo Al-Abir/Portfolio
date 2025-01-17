@@ -9,16 +9,16 @@ const Navbar = () => {
 
   const link = (
     <>
-      <li className="text-xl">
+      <li className="text-lg">
         <a href="#" onClick={toggleMenu}>Home</a>
       </li>
-      <li className="text-xl">
+      <li className="text-lg">
         <a href="#about" onClick={toggleMenu}>About</a>
       </li>
-      <li className="text-xl">
+      <li className="text-lg">
         <a href="#work" onClick={toggleMenu}>Work</a>
       </li>
-      <li className="text-xl">
+      <li className="text-lg">
         <a href="#reviews" onClick={toggleMenu}>Reviews</a>
       </li>
     </>
